@@ -18,8 +18,8 @@
 								<h2 class="text">{{item.text}}</h2>
 								<h2 class="text">——likes:{{item.like}}</h2>
 								<div v-if="item.btnshow">
-									<button class = "btn1 btn-success btn-lg"  @click="like(item.id)">喜欢，有用，好感++</button>
-									<button class = "btn2 btn-danger btn-lg" @click="notlike(item.id)">不喜欢，没用，好感--</button>
+									<button class = "btn1 btn-success btn-lg" :style="styles1" @click="like(item.id)">喜欢，有用，好感++</button>
+									<button class = "btn2 btn-danger btn-lg" :style="styles2" @click="notlike(item.id)">不喜欢，没用，好感--</button>
 								</div>
 							</div>
 						</div>
